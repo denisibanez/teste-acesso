@@ -13,7 +13,8 @@ label {  text-align: left !important;  padding-bottom: 5px;}
 .helv { font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;  color:$cinza-letra;}
 textarea {margin-top: 10px !important;}
 header {
-  height: 80px;
+  height:100%;
+  min-height: 80px;
   background-color: $cinza;
 }
 
@@ -64,6 +65,7 @@ header {
 .caminho {
   background-color: $branco;
   margin: 0 !important;
+
   a {
     text-decoration: none;
     @extend .helv;
@@ -77,9 +79,6 @@ time {
       padding-left:5px;
       @extend .helv ;
     }
-}
-.data {
-  padding: 8px 30px;
 }
 .line {
   border-bottom: 1px solid $line ;
@@ -160,4 +159,49 @@ footer {
    span {
      color: $laranja;
    }
+}
+.min-height {
+  height: 100%;
+min-height: 210px;
+}
+.second-min-height {
+  min-height: 566px;
+  height:100%
+}
+@media (max-width:767px) {
+  .icon-user {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width:991px) {
+  .imput-resp {
+    padding-top: 15px;
+  }
+    .min-height {
+      height: 100%;
+    min-height:380px;
+    }
+    .line-resp {
+        border-top: 1px solid $line ;
+    }
+    .pd-resp {
+      padding-bottom: 15px;
+    }
+    .border-direita {
+      border-right: 0px;
+    }
+    .border-esquerda {
+      border-left: 0px;
+    }
+}
+@media (min-width:992px) and (max-width:1245px) {
+  .min-height {
+    height: 100%;
+  min-height: 270px;
+  }
+  .second-min-height {
+    min-height: 500px;
+    height:100%
+  }
 }
